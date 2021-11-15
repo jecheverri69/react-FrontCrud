@@ -5,7 +5,7 @@ const paths = {
 	users: {
 		getUsers: domains.Crud + "listar",
 		addUser: domains.Crud + "adduser",
-		deleteUser: domains.Crud + "deleteuser",
+		deleteUser: domains.Crud + "Deleteuser",
 		updateUser: domains.Crud + "updateuser",
 	},
 };

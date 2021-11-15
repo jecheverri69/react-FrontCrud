@@ -52,7 +52,6 @@ export const UpdateUser = async (body) => {
 				"Content-Type": "application/json",
 			},
 		});
-		debugger;
 		return response.data;
 	} catch (err) {
 		return { responseStatus: false, err };

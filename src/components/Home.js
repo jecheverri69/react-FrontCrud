@@ -13,7 +13,7 @@ import {
 	AddUser,
 	DeleteUser,
 	UpdateUser,
-} from "../Api/actions/users";
+} from "../api/actions/users";
 import Dialog from "@mui/material/Dialog";
 
 const useStyles = makeStyles((theme) => ({
@@ -145,6 +145,13 @@ function Home() {
 			lastName: editLastName,
 		};
 		const response = await UpdateUser(body);
+    if(response == "actualizado correctamente"){
+      const response2 = await getUsers();
+			setUsers(response2);
+      setOpenModalEdit(false);
+    }else{
+      alert("hubo un error")
+    }
 	};
 
 	const updateUser = (tableMeta) => {
@@ -218,7 +225,9 @@ function Home() {
 						/>
 					</Grid>
 				</Grid>
-				<Dialog open={openModalEdit} title={"Editar Usuario"}>
+				<Dialog open={openModalEdit} 
+        onClose={() => setOpenModalEdit(false)} 
+        title={"Editar Usuario"}>
 					<DialogContent>
 						<Grid container spacing={2}>
 							<Grid item xs={12} md={6}>
