@@ -1,12 +1,10 @@
 const domains = {
-	Crud: "http://localhost:9000/api/",
-};
+	Crud: "https://bjava11.herokuapp.com/productos/",
+	};
 const paths = {
 	users: {
-		getUsers: domains.Crud + "listar",
-		addUser: domains.Crud + "adduser",
-		deleteUser: domains.Crud + "Deleteuser",
-		updateUser: domains.Crud + "updateuser",
+		getProducts: domains.Crud + "listar",
+		addProduct: domains.Crud + "guardar",		
 	},
 };
 
