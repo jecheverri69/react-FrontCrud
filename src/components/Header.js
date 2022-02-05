@@ -37,7 +37,10 @@ const Header = () => {
   const setLink = (val) => {
 	  if(val === "add"){
 		  window.location.href = "/Agregar"
-	  }else{
+	  }else if(val === "index"){
+		window.location.href = "/"
+	  }else
+	  {
 		window.location.href = "/Productos"
 	  }
 	setAnchorElNav(null);
@@ -52,8 +55,9 @@ const Header = () => {
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+			onClick={() => setLink("index")}
           >
-            LOGO
+            Tienda el Dacta
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
