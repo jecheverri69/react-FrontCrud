@@ -1,14 +1,17 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Products from "./components/Productos";
+import Add from "./components/Agregar";
+
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/Agregar" element={<Add/>} />
+          <Route path="/Productos" element={<Products/>} />
         </Routes>
       </BrowserRouter>
     </div>
