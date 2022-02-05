@@ -15,5 +15,5 @@ function formatstring(fmtstr) {
 		return args[index];
 	});
 }
-
+ 
 export { domains, paths, formatstring };
