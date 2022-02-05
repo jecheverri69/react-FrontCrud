@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material";
 import theme from "./style/theme";
 import MUIDataTable from "mui-datatables";
 import { useEffect } from "react";
-import { getProducts, AddProduct } from "../api/actions/users";
+import { getProducts, AddProduct } from "../api/actions/products";
 import Dialog from "@mui/material/Dialog";
 import Header from "./Header";
 

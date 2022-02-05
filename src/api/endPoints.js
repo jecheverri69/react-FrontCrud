@@ -2,9 +2,10 @@ const domains = {
 	Crud: "https://bjava11.herokuapp.com/productos/",
 	};
 const paths = {
-	users: {
+	products: {
 		getProducts: domains.Crud + "listar",
-		addProduct: domains.Crud + "guardar",		
+		addProduct: domains.Crud + "guardar",	
+		deleteProducts: domains.Crud + "borrar",		
 	},
 };
 

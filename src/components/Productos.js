@@ -10,7 +10,7 @@ import MUIDataTable from "mui-datatables";
 import { useEffect } from "react";
 import {
 	getProducts,
-} from "../api/actions/users";
+} from "../api/actions/products";
 import Header from "./Header";
 
 
@@ -88,9 +88,6 @@ function Products() {
 		debugger
 		setProducts(response);
 	}, []);
-	
-
-
 	
 	const classes = useStyles();
 	return (

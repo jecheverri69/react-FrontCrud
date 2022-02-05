@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Products from "./components/Productos";
 import Add from "./components/Agregar";
+import Index from "./components/Index";
+
 
 
 
@@ -12,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/Agregar" element={<Add/>} />
           <Route path="/Productos" element={<Products/>} />
+          <Route path="/" element={<Index/>} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -19,3 +22,4 @@ function App() {
 }
 
 export default App;
+
